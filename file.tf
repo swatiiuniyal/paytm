@@ -1,5 +1,5 @@
-resource "aws_security_group" "web_security" {
-    name = "web-security"
+resource "aws_security_group" "web_security1" {
+    name = "web-security1"
 
   ingress {
      from_port = 22
@@ -24,5 +24,5 @@ resource "aws_security_group" "web_security" {
 }
 
 output "sg_id"{
-value=  aws_security_group.web_security.id
+value=  aws_security_group.web_security1.id
 }
